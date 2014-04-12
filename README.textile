@@ -59,11 +59,11 @@ h2. Similar Examples and Tutorials
 
 This is one in a series of Rails example apps and tutorials from the "RailsApps Project":http://railsapps.github.io/. See a list of additional "Rails examples, tutorials, and starter apps":http://railsapps.github.io/rails-examples-tutorials.html. Related example applications may be useful:
 
-* "Learn Rails":https://github.com/RailsApps/learn-rails shows how to add additional pages
+* "Learn Rails":https://github.com/RailsApps/learn-rails companion to the book "Learn Ruby on Rails":http://learn-rails.com/learn-ruby-on-rails.html
+* "Foundation and Rails":http://railsapps.github.io/rails-foundation/ shows how to integrate Foundation
 * "Bootstrap and Rails":http://railsapps.github.io/rails-bootstrap/ shows to integrate Bootstrap
-* "Foundation and Rails":https://github.com/RailsApps/rails-foundation shows to integrate Foundation
 * "Devise and Rails":https://github.com/RailsApps/rails-devise shows to use Devise for authentication
-* "Devise and Pundit and Rails":https://github.com/RailsApps/rails-devise-pundit shows to use Pundit for authorization
+* "Devise and Pundit and Rails":https://github.com/RailsApps/rails-devise-pundit uses Pundit for authorization
 
 h2. Accounts You Will Need
 
@@ -98,7 +98,7 @@ h2. Dependencies
 
 Before generating your application, you will need:
 
-* The Ruby language - version 2.1.1
+* The Ruby language - version 2.1
 * The Rails gem - version 4.1
 
 See the article "Installing Rails":http://railsapps.github.io/installing-rails.html for instructions about setting up Rails and your development environment.
@@ -147,9 +147,13 @@ question  Build a starter application?
 Enter "1" to select *Build a RailsApps example application*. You'll see a prompt:
 
 <pre>
-question  Starter apps for Rails 4.1. More to come.
-      1)  rails-devise
-      2)  rails-omniauth
+  question  Starter apps for Rails 4.1. More to come.
+        1)  learn-rails
+        2)  rails-bootstrap
+        3)  rails-foundation
+        4)  rails-omniauth
+        5)  rails-devise
+        6)  rails-devise-pundit
 </pre>
 
 Choose *rails-omniauth*. The Rails Composer tool may give you other options (other applications may have been added since these notes were written).
