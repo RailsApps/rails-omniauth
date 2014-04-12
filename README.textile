@@ -367,20 +367,35 @@ The Sass mixins allow any view to be used with either Bootstrap or Foundation (s
 
 h3. Configuration File
 
-To keep some data private, and consolidate configuration settings in a single location, we store credentials in the *config/secrets.yml* file. Include the *config/secrets.yml* file in the *.gitignore* file to prevent the file from being saved in the git repository. See the article "Rails Environment Variables":http://railsapps.github.io/rails-environment-variables.html for more information.
+To consolidate configuration settings in a single location, we store credentials in the *config/secrets.yml* file. To keep your credentials private, use Unix environment variables to set your credentials. See the article "Rails Environment Variables":http://railsapps.github.io/rails-environment-variables.html for more information.
 
 Add your credentials to the file *config/secrets.yml*:
 
 <pre>
+# Make sure the secrets in this file are kept private
+# if you're sharing your code publicly.
+
 development:
-  omniauth_provider_key: Your_Provider_Key
-  omniauth_provider_secret: Your_Provider_Secret
-  secret_key_base: (not shown)
+  omniauth_provider_key: <%= ENV["OMNIAUTH_PROVIDER_KEY"] %>
+  omniauth_provider_secret: <%= ENV["OMNIAUTH_PROVIDER_SECRET"] %>
+  secret_key_base: very_long_random_string
+
+test:
+  secret_key_base: very_long_random_string
+
+# Do not keep production secrets in the repository,
+# instead read values from the environment.
+production:
+  omniauth_provider_key: <%= ENV["OMNIAUTH_PROVIDER_KEY"] %>
+  omniauth_provider_secret: <%= ENV["OMNIAUTH_PROVIDER_SECRET"] %>
+  secret_key_base: <%= ENV["SECRET_KEY_BASE"] %>
 </pre>
 
-All configuration values in the *config/secrets.yml* file are available anywhere in the application as variables. For example, @Rails.application.secrets.omniauth_provider_key@ will return the string "Your_Provider_Key". If you wish, you can obtain each value from an environment variable in the Unix shell. For example, @omniauth_provider_key: <%= ENV["OMNIAUTH_PROVIDER_KEY"] %>@.
+All configuration values in the *config/secrets.yml* file are available anywhere in the application as variables. For example, @Rails.application.secrets.omniauth_provider_key@ will return the string set in the Unix environment variable @OMNIAUTH_PROVIDER_KEY@.
 
 Set the @omniauth_provider_key@ and @omniauth_provider_secret@ with the credentials you obtained when you set up your application with Twitter or another provider.
+
+If you don't want to use Unix environment variables, you can set each value directly in the *config/secrets.yml* file. The file must be in your git repository when you deploy to Heroku. However, you shouldn't save the file to a public GitHub repository where other people can see your credentials.
 
 h3. Database Seed File
 
@@ -476,9 +491,9 @@ Please create a "GitHub issue":https://github.com/RailsApps/rails-omniauth/issue
 
 h2. Where to Get Help
 
-Your best source for help with problems is "Stack Overflow":http://stackoverflow.com/questions/tagged/ruby-on-rails. Your issue may have been encountered and addressed by others.
+Your best source for help with problems is "Stack Overflow":http://stackoverflow.com/questions/tagged/ruby-on-rails-3. Your issue may have been encountered and addressed by others.
 
-You can also try "Rails Hotline":http://www.railshotline.com/, a free telephone hotline for Rails help staffed by volunteers.
+Use the tag "railsapps" on Stack Overflow for extra attention.
 
 h2. Contributing
 
