@@ -192,9 +192,9 @@ The application generator template will ask you for additional preferences:
        1)  ERB
        2)  Haml
        3)  Slim
- question  Continuous testing?
+ question  Test framework?
        1)  None
-       2)  Guard
+       2)  RSpec with Capybara
  question  Front-end framework?
        1)  None
        2)  Twitter Bootstrap 3.0
@@ -231,6 +231,10 @@ h4. Template Engine
 
 The example application uses the default "ERB" Rails template engine. Optionally, you can use another template engine, such as Haml or Slim. See instructions for "Haml and Rails":http://railsapps.github.io/rails-haml.html.
 
+h4. Testing
+
+If you are a beginner, select "None."
+
 h4. Front-end Framework
 
 The example in the GitHub repository was built using "Simple CSS." Use Zurb Foundation or Bootstrap if you prefer.
@@ -241,13 +245,11 @@ Choose the service provider you will use. The example application uses Twitter.
 
 h4. Other Choices
 
-If you are a beginner, you won't need "continuous testing." If you like to use "Guard":https://github.com/guard/guard, you can select it.
-
 Set a robots.txt file to ban spiders if you want to keep your new site out of Google search results.
 
 If you choose to create a GitHub repository, the generator will prompt you for a GitHub username and password.
 
-It is a good idea to use "RVM":https://rvm.io/, the Ruby Version Manager, and create a project-specific rvm gemset (not available on Windows). See "Installing Rails":http://railsapps.github.io/installing-rails.html.
+It is a good idea to use "rvm":https://rvm.io/, the Ruby Version Manager, and create a project-specific rvm gemset (not available on Windows). See "Installing Rails":http://railsapps.github.io/installing-rails.html.
 
 h4. Troubleshooting
 
