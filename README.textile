@@ -319,15 +319,19 @@ h3. Front-end Framework
 
 If you generate the application using the "Rails Composer":http://railsapps.github.io/rails-composer/ tool, you have the option to install either Bootstrap or Foundation. The folder *app/views/devise/* will contain attractive view files that override the views provided in the Devise gem.
 
-If you clone the application from the repository, and you wish to add replace the simple CSS with Bootstrap or Foundation, first add a gem to the Gemfile:
+If you clone the application from the repository, and you wish to add replace Bootstrap with Foundation, first set up the Gemfile:
 
 h4. Bootstrap 3.0
+
+Remove:
 
 <pre>
 gem 'bootstrap-sass'
 </pre>
 
 h4. Zurb Foundation 5.0
+
+Add:
 
 <pre>
 gem 'foundation-rails'
@@ -339,14 +343,6 @@ Use Bundler to install the gem:
 
 <pre>
 $ bundle install
-</pre>
-
-h4. Bootstrap 3.0 Layout
-
-To create layout files for use with Bootstrap 3.0:
-
-<pre>
-$ rails generate layout:install bootstrap3
 </pre>
 
 h4. Zurb Foundation 5.0 Layout
