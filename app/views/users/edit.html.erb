@@ -1,6 +1,10 @@
-<%= form_for(@user) do |f| %>
-  <%= f.label :email %>
-  <%= f.text_field :email %>
-  <br />
-  <%= f.submit "Update" %>
-<% end %>
+<div class="authform">
+  <%= form_for(@user) do |f| %>
+    <div class="form-group">
+      <%= f.label :email %>
+      <%= f.email_field :email, class: 'form-control' %>
+    </div>
+    </fieldset>
+    <%= f.submit 'Sign in', :class => 'button right' %>
+  <% end %>
+</div>
