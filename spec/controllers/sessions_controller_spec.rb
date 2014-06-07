@@ -30,7 +30,7 @@ describe SessionsController, :omniauth do
     end
 
     it "resets the session" do
-      session[:user_id].should_not be_nil
+      expect(session[:user_id]).not_to be_nil
       delete :destroy
       expect(session[:user_id]).to be_nil
     end

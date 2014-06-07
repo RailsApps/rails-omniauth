@@ -20,7 +20,7 @@ module Omniauth
   module SessionHelpers
     def signin
       visit root_path
-      page.should have_content("Sign in")
+      expect(page).to have_content("Sign in")
       auth_mock
       click_link "Sign in"
       fill_in 'user_email', with: 'test@example.com'
