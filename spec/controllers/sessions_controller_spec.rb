@@ -13,7 +13,7 @@ describe SessionsController, :omniauth do
     it "creates a session" do
       expect(session[:user_id]).to be_nil
       post :create, provider: :twitter
-      expect(session[:user_id]).to_not be_nil
+      expect(session[:user_id]).not_to be_nil
     end
 
     it "redirects the user to the user profile" do
