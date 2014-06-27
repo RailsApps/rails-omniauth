@@ -23,8 +23,6 @@ module Omniauth
       expect(page).to have_content("Sign in")
       auth_mock
       click_link "Sign in"
-      fill_in 'user_email', with: 'test@example.com'
-      click_button "Sign in"
     end
   end
 
