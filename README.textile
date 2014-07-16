@@ -58,8 +58,8 @@ h2. Similar Examples and Tutorials
 This is one in a series of Rails example apps and tutorials from the "RailsApps Project":http://railsapps.github.io/. See a list of additional "Rails examples, tutorials, and starter apps":http://railsapps.github.io/rails-examples-tutorials.html. Related example applications may be useful:
 
 * "Learn Rails":https://github.com/RailsApps/learn-rails companion to the book "Learn Ruby on Rails":http://learn-rails.com/learn-ruby-on-rails.html
-* "Foundation and Rails":http://railsapps.github.io/rails-foundation/ shows how to integrate Foundation
-* "Bootstrap and Rails":http://railsapps.github.io/rails-bootstrap/ shows to integrate Bootstrap
+* "Foundation and Rails":https://github.com/RailsApps/rails-foundation shows how to integrate Foundation
+* "Bootstrap and Rails":https://github.com/RailsApps/rails-bootstrap shows to integrate Bootstrap
 * "Devise and Rails":https://github.com/RailsApps/rails-devise shows to use Devise for authentication
 * "Devise and Pundit and Rails":https://github.com/RailsApps/rails-devise-pundit uses Pundit for authorization
 
