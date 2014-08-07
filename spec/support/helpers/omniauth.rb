@@ -6,8 +6,7 @@ module Omniauth
         'provider' => 'twitter',
         'uid' => '123545',
         'user_info' => {
-          'name' => 'mockuser',
-          'image' => 'mock_user_thumbnail_url'
+          'name' => 'mockuser'
         },
         'credentials' => {
           'token' => 'mock_token',
