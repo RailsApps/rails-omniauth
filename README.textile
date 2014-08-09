@@ -1,20 +1,18 @@
 h1. !http://railsapps.github.io/images/rails-36x36.jpg(Rails OmniAuth)! Rails and OmniAuth
 
-Rails 4.1 example application that integrates Rails and OmniAuth.
-
-"OmniAuth":https://github.com/intridea/omniauth/wiki is a gem that Rails developers use for authentication with third-party credentials such as Facebook, Twitter, or GitHub accounts.
-
-This example application shows how to set up authentication using OmniAuth.
-
-Use this example application as a starter app for your own web applications.
+Rails 4.1 example application that integrates Rails and OmniAuth. "OmniAuth":https://github.com/intridea/omniauth/wiki is a gem that provides authentication using third-party credentials such as Facebook, Twitter, or GitHub accounts.
 
 You can build this application in only a few minutes using the "Rails Composer":http://railsapps.github.io/rails-composer/ tool, choosing either a Bootstrap or Foundation front-end framework, as well as many other options, such as Haml or Slim.
 
 h4. !http://railsapps.github.io/images/join/join-railsapps.png(Join RailsApps)!:http://railsapps.github.io/
 
+h4. OmniAuth Tutorial
+
+Our "Rails and OmniAuth tutorial":http://railsapps.github.io/rails-omniauth/ explains the application in-depth so there is no mystery code. The tutorial is available for developers who subscribe to support the "RailsApps project":http://railsapps.github.io/.
+
 h4. What is the RailsApps Project?
 
-The "RailsApps project":http://railsapps.github.io/ provides example applications that developers use as starter apps. Hundreds of developers use the apps, report problems as they arise, and propose solutions. Rails changes frequently; each application is known to work and serves as your personal "reference implementation." Each application is accompanied by a tutorial so there is no mystery code. Support for the project comes from subscribers. If this application is useful, please "join the RailsApps project":http://railsapps.github.io/ to support our work.
+The "RailsApps project":http://railsapps.github.io/ provides example applications that developers use as starter apps. Hundreds of developers use the apps, report problems as they arise, and propose solutions. Rails changes frequently; each application is known to work and serves as your personal "reference implementation." Support for the project comes from subscribers. If this application is useful, please "join the RailsApps project":http://railsapps.github.io/ to support our work.
 
 h4. If You Are New to Rails
 
@@ -43,7 +41,7 @@ h4. When to use Devise?
 
 h4. The Email Problem
 
-You don’t need to ask a visitor for an email address when you build an application that allows a user to log in using a service provider such as Twitter or Facebook. You may consider that an advantage: if a user is logged in with Twitter or Facebook, they don’t need to enter an email address and password to access your application. However, the lack of an email address may be a business drawback, if you want the opportunity to stay in contact with the user by email. Some service providers provide the user’s email address to your application (Facebook). Some service providers only provide the email address at the user’s option (GitHub supplies it if the user has provided a public email address). And other service providers do not provide the email address at all (Twitter, Meetup, LinkedIn).
+You don’t need to ask a visitor for an email address when you build an application that allows a user to log in using a service provider such as Twitter or Facebook. You may consider that an advantage: if a user is logged in with Twitter or Facebook, they don’t need to enter an email address and password to access your application. However, the lack of an email address may be a business drawback, if you want the opportunity to stay in contact with the user by email. Some service providers provide the user’s email address to your application (Facebook). Some service providers only provide the email address at the user’s option (GitHub supplies it if the user has provided a public email address). And other service providers do not provide the email address at all (Twitter, Meetup, LinkedIn). Our "Rails and OmniAuth tutorial":http://railsapps.github.io/rails-omniauth/ shows how to customize the application to ask for an email address when the user signs in for the first time.
 
 h4. Database
 
@@ -317,9 +315,7 @@ h3. Front-end Framework
 
 If you generate the application using the "Rails Composer":http://railsapps.github.io/rails-composer/ tool, you have the option to install either Bootstrap or Foundation. The folder *app/views/devise/* will contain attractive view files that override the views provided in the Devise gem.
 
-If you clone the application from the repository, and you wish to add replace Bootstrap with Foundation, first set up the Gemfile:
-
-h4. Bootstrap 3.0
+The example application in the repository is set up with Bootstrap. If you wish to replace Bootstrap with Foundation, first set up the Gemfile:
 
 Remove:
 
@@ -327,23 +323,17 @@ Remove:
 gem 'bootstrap-sass'
 </pre>
 
-h4. Zurb Foundation 5.0
-
 Add:
 
 <pre>
 gem 'foundation-rails'
 </pre>
 
-h4. Use Bundler
-
 Use Bundler to install the gem:
 
 <pre>
 $ bundle install
 </pre>
-
-h4. Zurb Foundation 5.0 Layout
 
 To create layout files for use with Zurb Foundation 5.0:
 
