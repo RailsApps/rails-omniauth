@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
-  before_filter :authenticate_user!
-  before_filter :correct_user?, :except => [:index]
+  before_action :authenticate_user!
+  before_action :correct_user?, :except => [:index]
 
   def index
     @users = User.all
