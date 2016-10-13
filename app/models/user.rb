@@ -1,4 +1,4 @@
-class User < ActiveRecord::Base
+class User < ApplicationRecord
 
   def self.create_with_omniauth(auth)
     create! do |user|

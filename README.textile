@@ -1,6 +1,6 @@
 h1. !http://railsapps.github.io/images/rails-36x36.jpg(Rails OmniAuth)! Rails and OmniAuth
 
-Rails 4.2 example application that integrates Rails and OmniAuth. "OmniAuth":https://github.com/intridea/omniauth/wiki is a gem that provides authentication using third-party credentials such as Facebook, Twitter, or GitHub accounts.
+Rails 5.0 example application that integrates Rails and OmniAuth. "OmniAuth":https://github.com/intridea/omniauth/wiki is a gem that provides authentication using third-party credentials such as Facebook, Twitter, or GitHub accounts.
 
 You can build this application in only a few minutes using the "Rails Composer":http://railsapps.github.io/rails-composer/ tool, choosing either a Bootstrap or Foundation front-end framework, as well as many other options, such as Haml or Slim.
 
@@ -94,8 +94,8 @@ h2. Dependencies
 
 Before generating your application, you will need:
 
-* The Ruby language - version 2.2
-* The Rails gem - version 4.2
+* The Ruby language - version 2.3.1
+* The Rails gem - version 5.0
 
 See the article "Installing Rails":http://railsapps.github.io/installing-rails.html for instructions about setting up Rails and your development environment.
 
@@ -123,7 +123,7 @@ h4. Generate
 
 If you want to use the project as a starter application, use the "Rails Composer":http://railsapps.github.io/rails-composer/ tool to generate a new version of the example app. You'll be able to give it your own project name when you generate the app. Generating the application gives you additional options.
 
-To build the example application, Rails 4.2 must be installed in your development environment. Run the command:
+To build the example application, Rails 5.0 must be installed in your development environment. Run the command:
 
 <pre>
 $ rails new rails-omniauth -m https://raw.github.com/RailsApps/rails-composer/master/composer.rb
@@ -269,7 +269,6 @@ Here are the gems used by the application:
 These gems make development easier:
 
 * "better_errors":https://github.com/charliesome/better_errors - helps when things go wrong
-* "quiet_assets":https://github.com/evrone/quiet_assets - suppresses distracting messages in the log
 * "rails_layout":https://github.com/RailsApps/rails_layout - generates files for an application layout
 
 Your choice of front-end framework:
@@ -473,7 +472,7 @@ h2. MIT License
 
 "MIT License":http://www.opensource.org/licenses/mit-license
 
-Copyright ©2014-15 Daniel Kehoe
+Copyright ©2014-16 Daniel Kehoe
 
 h2. Useful Links
 
