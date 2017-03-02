@@ -4,9 +4,13 @@ Demo uses the omni-auth gem to load google contacts.
 
 ### Installing
 
-A step by step series of examples that tell you have to get a development env running
+```ruby
+git clone git@github.com:nathantech2005/rails-omniauth.git
+```
 
-Say what the step will be
+```ruby
+cd rails-omniauth
+```
 
 ```ruby
 bundle install
