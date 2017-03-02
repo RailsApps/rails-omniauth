@@ -27,6 +27,13 @@ OMNIAUTH_PROVIDER_KEY: your_client_id
 OMNIAUTH_PROVIDER_SECRET: your_secret
 ```
 
+Start Server
+
+```ruby
+cd rails-omniauth
+rails s
+```
+
 ## Built With
 
 [Ruby 2.3.1](https://www.ruby-lang.org/en/news/2016/04/26/ruby-2-3-1-released/)
