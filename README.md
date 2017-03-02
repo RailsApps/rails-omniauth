@@ -12,7 +12,9 @@ Say what the step will be
 bundle install
 ```
 
-Copy application.yml.example to application.yml
+Follow this Google Tutorial on Setting up Keys (link)
+
+Copy config/application.yml.example to config/application.yml
 
 ```ruby
 cp config/application.yml.example config/application.yml
@@ -24,10 +26,6 @@ Set Keys in config/application.yml
 OMNIAUTH_PROVIDER_KEY: your_client_id
 OMNIAUTH_PROVIDER_SECRET: your_secret
 ```
-
-In order to set your keys make sure to update `application.yml`
-
-`cp config/application.yml.example config/application.yml`
 
 ## Built With
 
