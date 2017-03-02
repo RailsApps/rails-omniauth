@@ -18,34 +18,22 @@ Copy application.yml.example to application.yml
 cp config/application.yml.example config/application.yml
 ```
 
-Set Keys
+Set Keys in config/application.yml
 
 ```ruby
 OMNIAUTH_PROVIDER_KEY: your_client_id
 OMNIAUTH_PROVIDER_SECRET: your_secret
 ```
 
-End with an example of getting some data out of the system or using it for a little demo
-
-## Configuration
-
-In order to set your keys make sure to update `application.yml` 
+In order to set your keys make sure to update `application.yml`
 
 `cp config/application.yml.example config/application.yml`
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
 
 ## Built With
 
 [Ruby 2.3.1](https://www.ruby-lang.org/en/news/2016/04/26/ruby-2-3-1-released/)
 
 [Rails 5.0](http://weblog.rubyonrails.org)
-
-##Contributing
-
-Please read CONTRIBUTING.md for details on our code of conduct, and the process for submitting pull requests to us.
 
 ## Authors
 
@@ -61,8 +49,3 @@ Arun Kumar
 
 This project is licensed under the MIT License - see the LICENSE.md file for details
 
-## Acknowledgments
-
-Hat tip to anyone who's code was used
-Inspiration
-etc
