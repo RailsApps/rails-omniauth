@@ -2,6 +2,10 @@
 
 Demo uses the omni-auth gem to load google contacts.
 
+### Required
+Follow this Google Tutorial on Setting up Keys
+https://richonrails.com/articles/google-authentication-in-ruby-on-rails
+
 ### Installing
 
 ```ruby
@@ -15,8 +19,6 @@ cd rails-omniauth
 ```ruby
 bundle install
 ```
-
-Follow this Google Tutorial on Setting up Keys (link)
 
 Copy config/application.yml.example to config/application.yml
 
