@@ -34,6 +34,12 @@ cd rails-omniauth
 rails s
 ```
 
+Go to this address in browser:
+
+```ruby
+http://localhost:3000
+```
+
 ## Built With
 
 [Ruby 2.3.1](https://www.ruby-lang.org/en/news/2016/04/26/ruby-2-3-1-released/)
