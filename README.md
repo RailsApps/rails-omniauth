@@ -1,18 +1,10 @@
-# Project Title
+# Google Contacts Demo (omni-auth gem)
 
-One Paragraph of project description goes here
+Demo uses the omni-auth gem to load google contacts.
 
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
-
-### Prerequisites
-
-What things you need to install the software and how to install them
-
-```ruby
-Give examples
-```
 
 ### Installing
 
@@ -21,13 +13,13 @@ A step by step series of examples that tell you have to get a development env ru
 Say what the step will be
 
 ```ruby
-Give the example
-``` 
+bundle install
+```
 
-And repeat
+Copy application.yml.example to application.yml
 
 ```ruby
-until finished
+cp application.yml.example application.yml
 ```
 
 End with an example of getting some data out of the system or using it for a little demo
